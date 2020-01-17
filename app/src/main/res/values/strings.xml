@@ -2,4 +2,6 @@
     <string name="app_name">Mon Dé Afpa</string>
     <string name="lancer">Lancer</string>
     <string name="le_d_num_rique">Le dé numérique</string>
+    <string name="faces">Faces</string>
+    <string name="relancer">Relancer</string>
 </resources>
