@@ -7,40 +7,14 @@
     tools:context=".ResultatActivity">
 
     <TextView
-        android:id="@+id/resultat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:text="0"
-        android:textSize="100sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/nombreDeFacesReport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="180dp"
         android:text="report"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rerunbutt" />
-
-    <Button
-        android:id="@+id/rerunbutt"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="400dp"
-        android:background="@drawable/backbutton"
-        android:onClick="relancer"
-        android:text="@string/relancer"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultat" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -52,6 +26,31 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo_afpa" />
+
+    <TextView
+        android:id="@+id/resultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="176dp"
+        android:text="0"
+        android:textSize="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rerunbutt"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="156dp"
+        android:background="@drawable/backbutton"
+        android:onClick="relancer"
+        android:text="@string/relancer"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
