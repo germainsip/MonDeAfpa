@@ -26,5 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
         intent.putExtra(EXTRA_NBFACES,nbFaces);
         startActivity(intent);
+
     }
 }

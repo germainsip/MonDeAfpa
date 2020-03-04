@@ -2,16 +2,18 @@ package com.afpa.mondeafpa;
 
 import android.content.Intent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import java.util.Random;
 
-public class ResultatActivity extends AppCompatActivity {
+public class ResultatActivity extends AppCompatActivity implements View.OnClickListener{
 
     private TextView resultat;
     private int nbFaces;
+    private Button re;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,9 @@ public class ResultatActivity extends AppCompatActivity {
         // Trouve le TextView et modifie le texte.TextVia
         resultat = findViewById(R.id.resultat);
         TextView report = findViewById(R.id.nombreDeFacesReport);
+        re = (Button) findViewById(R.id.rerunbutt);
+
+        re.setOnClickListener(this);
         report.setText(nbFacesSt);
         relancer();
     }
@@ -40,7 +45,11 @@ public class ResultatActivity extends AppCompatActivity {
 
     }
 
-    public void relancer(View view) {
-        relancer();
+
+    @Override
+    public void onClick(View v) {
+if (v == re){
+    relancer();
+}
     }
 }
